@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="org.uottawa.html5.simplepage">
+
+	<require plugin="org.uottawa.html5" />
+	
+	<template file="build_uoinfohtml5-transtype_template.xml" />
+	
+	<feature extension="dita.conductor.transtype.check" value="uopageshtml5" type="txt" />
+	<feature extension="dita.conductor.target.relative" file="build.xml" type="file" />
+</plugin>

@@ -1,0 +1,16 @@
+<project name="dita2uopageshtml5" default="dita2uoinfohtml5">
+
+	<property name="transtype" value="uopageshtml5"/>
+
+	<target name="dita2uopageshtml5" xmlns:dita="http://dita-ot.sourceforge.net"
+		dita:extension="depends org.dita.dost.platform.InsertDependsAction">
+
+		<antcall target="dita2uohtml5">
+			<param name="html5.navigation.markup" value="default"/>
+			<param name="html5.site.theme" value="uo"/>
+			<param name="cssroot" value="d4p-reports"/>
+		</antcall>
+
+	</target>
+
+</project>
